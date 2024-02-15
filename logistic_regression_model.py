@@ -4,8 +4,6 @@ from sklearn.linear_model import LogisticRegression
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-
 # load data
 data = pd.read_csv('Womens_Clothing_E-Commerce_Reviews.csv')
 data = data.dropna(subset=['Review Text', 'Recommended IND'])
@@ -75,7 +73,7 @@ plt.title("Frequency of Words in Recommended/Not Recommended Review Texts")
 plt.tight_layout()
 plt.show()
 
-selected_words_model = ['cheap', 'itchy', 'why', 'return', 'look', 'beautiful', 'go-to', 'not worth', 'quality']  # You can change this list as needed
+selected_words_model = ['cheap', 'itchy', 'why', 'return', 'look', 'beautiful', 'go-to', 'not worth', 'quality']
 
 
 # Create feature matrices for the model training and predictions
